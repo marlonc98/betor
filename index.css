@@ -1,0 +1,345 @@
+@font-face{
+    font-family: monserrat-extra-ligth;
+    src: url('assets/fonts/Montserrat/Montserrat-ExtraLight.ttf');
+}
+
+@font-face{
+    font-family: monserrat-bold;
+    src: url('assets/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: white;
+    cursor: pointer;
+}
+.font-light{
+    font-family: monserrat-extra-ligth;
+}
+
+.font-bold{
+    font-family: monserrat-bold;
+}
+.font-white{
+    color: white;
+}
+.background{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.background.footer{
+    bottom: 0;
+}
+
+.header{
+    padding-top: 20px;
+    align-items: center;
+}
+.header-options{
+    color: white;
+    text-align: end;
+    font-family: monserrat-extra-ligth;
+}
+.button-iniciar{
+    padding: 10px 20px;
+    border: solid thin #eebf15;
+    border-radius: 20px;
+}
+.button-iniciar:hover, .button-iniciar-title:hover{
+    cursor: pointer;
+    background-color: white;
+    border-color: white;
+    color: #113368 !important;
+}
+.free-demo-button{
+    padding: 10px 20px;
+    background-color: #eebf15;
+    color: #113368;
+    border-radius: 20px;   
+}
+.header-options>a{
+    margin-left: 20px;
+}
+
+.main-title{
+    font-size: 23px;
+    line-height: 1.2;
+}
+.main-title>strong{
+    font-size: 52px;
+}
+.button-iniciar-title{
+    padding: 10px 40px;
+    border: solid thin white;
+    border-radius: 20px;
+    margin-left: 0 !important;
+}
+.indicadores-container>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.indicadores-container>div>div>img{
+    width: 100%;
+}
+.indicadores-container>div>div>span{
+    text-align: center;
+    font-size: 20px;
+    font-family: monserrat-extra-ligth;
+}
+.title-how-works{
+    text-align: center;
+    margin-bottom: 50px;    
+}
+.title-how-works>h5, .learn-container>.row>h5{
+    color: #eebf15;
+    font-size: 52px;
+    margin-bottom: 25px;
+}
+.learn-container{
+    margin-top: 200px;
+
+}
+.learn-container>.row:first-child{
+    justify-content: flex-end   ;
+    width: 100%;
+}
+.learn-container>.row>h5{
+    color: black;
+    max-width: 700px;
+    text-align: right;
+}
+.title-how-works>span{
+    font-size: 30px;
+}
+.attributes-container{
+    justify-content: center;
+    display: flex; 
+    flex-direction: column;
+    color: white;
+}
+
+.attributes-container>p,.attributes-container>strong{
+    font-size: 20px;
+}
+
+.container-learn-info{
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.button-academy{
+    padding: 10px 20px;
+    color: white;
+    font-weight: 6  00;
+    background: rgb(17,51,104);
+    background: linear-gradient(90deg, rgba(17,51,104,1) 18%, rgba(67,129,179,1) 59%, rgba(7,55,135,1) 91%);
+    border-radius: 20px;
+}
+.follow-us-text{
+    font-size: 22px;
+width: 100%;
+display: flex;
+justify-content: center;
+justify-self: center;
+color: #656565;
+font-size: 20px;
+margin-top: 40px;
+}
+.container-social-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.container-social-media>a>img{
+    width: 70px;
+}
+.image-pc-2{
+    width: 120%;
+}
+.header-options-2{
+    color: white;
+}
+.footer-copy-text{
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: monserrat-bold;
+    font-size: 16px;
+}
+
+.menu-hamburguesa{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-hamburguesa>img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+#modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #113368ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: none;
+}
+
+#modal>a{
+    margin-top: 20px;
+}
+
+.modal-close{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+@media screen and (max-width:510px){
+    .fondo-middle{
+        max-height: unset;
+        min-height: 1000px;
+
+    }
+    .footer-copy-text{
+        font-family: unset;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width:992px){
+    .onlyPc{display: none;}
+    .header-options{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-options>a{
+        margin: 5px 0;
+    }
+    .title-how-works{
+        display: block;
+    }
+    .learn-container{
+        margin-top: 140px;
+    }
+    .title-how-works>h5, .learn-container>.row>h5{
+        font-size: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        text-align: center;
+    }
+    .title-how-works>span{
+        font-size: 16px;
+    }
+    .title-how-works{
+        text-align: justify;
+    }
+    .indicadores-container>div>div>span {
+        font-size: 12px;
+    }
+    .attributes-container>p,.attributes-container>strong{
+        font-size: 16px;
+    }
+    .why-container{
+        margin-top: 80px;
+    }
+    .attributes-container>h3{
+        font-size: 40px;
+    }
+    .attributes-container>strong{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .learn-subcontainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container-learn-info{
+        justify-content: space-between;
+        align-items: center;
+        text-align:justify;
+        margin-top: 10px;
+    }
+    .container-learn-info>a{
+        margin: 10px 0 40px;
+    }
+    .button-academy{
+        margin-bottom: 20px;
+    }
+    .image-pc-2{
+        width: 100%;
+    }
+    .header-options-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-options-2>a{
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+    .container-social-media>a>img{
+        width: 50px;
+    }   
+    .computador-img{
+        margin-top: -113px;
+        margin-left: 38px;
+        margin-bottom: -25px;
+    }
+    .fondo-middle{
+        margin-top: -196px;
+        max-height: 863px;
+
+    }
+    .fondo-superior{
+        max-height: 1369px;
+    }
+    
+}
+@media screen and (min-width:992px){
+
+    .onlyPhone{display: none;}
+    .why-container{
+        margin-top: 30px;
+    }
+
+    .header-options-2>a{
+        margin-right: 20px;
+    }
+    .button-academy{
+        position: absolute;
+        bottom: 70px;
+        right: 5%;
+    }
+    .follow-us-text{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .why-container{
+        margin-top: 177px;
+    }
+
+}
